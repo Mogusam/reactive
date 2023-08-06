@@ -31,7 +31,6 @@ public class MainRouter {
 
     @Bean
     public RouterFunction<ServerResponse> route() {
-//        WebClient client = WebClient.create("https://sports.api.decathlon.com/sports");
         RequestPredicate route = RequestPredicates
                 .GET("/hello")
                 .and(RequestPredicates.accept(MediaType.APPLICATION_JSON));

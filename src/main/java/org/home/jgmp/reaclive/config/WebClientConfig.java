@@ -32,11 +32,8 @@ public class WebClientConfig {
 
         return client
                 .get()
-//                .uri("/sports")
                 .accept(MediaType.APPLICATION_JSON)
                 .retrieve()
                 .bodyToMono(BookGen.class);
-
-
     }
 }
